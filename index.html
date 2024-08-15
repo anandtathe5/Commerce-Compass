@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,25 +15,33 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
 </head>
+
 <body>
     <div class="main-container">
-        <div class="video-background">
-            <video autoplay muted loop>
-                <source src="Hero_Video_2_8.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-
-        <div class="content">
+        <div class="left-section">
             <header>
                 <h1>Commerce Compass</h1>
-                <p>Leverage the largest directory of DTC ecommerce software and educational resources to solve your challenges and crush your goals.</p>
+                <p>Your gateway to the most comprehensive DTC ecommerce software and resources directory.</p>
             </header>
+            <div class="video-background">
+                <video autoplay muted loop>
+                    <source src="Hero_Video_2_8.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
 
+        <div class="right-section">
             <section>
-                <button id="exploreButton">Explore Resources</button>
-                <button id="connectWallet">Connect Wallet</button>
+                <button id="exploreButton" class="btn primary-btn">Explore Resources</button>
+                <button id="connectWallet" class="btn secondary-btn">Connect Wallet</button>
                 <p id="walletAddress">Not connected</p>
+            </section>
+
+            <section class="info">
+                <h2>Why DTC Matters</h2>
+                <p>DTC (Direct-to-Consumer) ecommerce models allow brands to build deeper relationships with their customers, control brand experience, and enhance profit margins by cutting out middlemen.</p>
+                <p>Commerce Compass is designed to help you navigate the complex landscape of DTC, offering tools, insights, and strategies to drive your business forward.</p>
             </section>
         </div>
 
@@ -59,4 +68,5 @@
         });
     </script>
 </body>
+
 </html>
