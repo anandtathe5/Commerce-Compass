@@ -1,26 +1,38 @@
-body {
-    font-family: Arial, sans-serif;
+/* CSS Reset */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
     color: #333;
+    line-height: 1.6;
 }
 
 header {
-    background-color: #007bff;
-    color: white;
-    padding: 20px;
+    background: linear-gradient(135deg, #007bff, #00bcd4);
+    color: #fff;
+    padding: 60px 20px;
     text-align: center;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 5px solid #0056b3;
 }
 
-h1 {
-    margin: 0;
-    font-size: 2.5em;
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    animation: fadeIn 1.5s ease-in-out;
 }
 
-p {
-    font-size: 1.2em;
-    margin-top: 10px;
+header p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    animation: fadeIn 2s ease-in-out;
 }
 
 .resources {
@@ -28,43 +40,98 @@ p {
     flex-wrap: wrap;
     justify-content: center;
     padding: 20px;
+    gap: 20px;
 }
 
 .resource-item {
-    background-color: #fff;
-    border-radius: 8px;
+    background: #ffffff;
+    border: 2px solid #007bff;
+    border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 10px;
-    padding: 20px;
-    width: 250px;
+    width: 300px;
     text-align: center;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    animation: slideIn 1s ease-in-out;
 }
 
 .resource-item h2 {
-    font-size: 1.5em;
+    font-size: 2rem;
+    color: #007bff;
     margin-bottom: 15px;
 }
 
 .resource-item button {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 20px;
+    background: #007bff;
+    color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 1rem;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 .resource-item button:hover {
-    background-color: #0056b3;
+    background: #0056b3;
+    transform: scale(1.05);
+}
+
+.resource-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 footer {
+    background: #007bff;
+    color: #fff;
     text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: white;
-    position: fixed;
+    padding: 15px 20px;
+    border-top: 5px solid #0056b3;
+    position: relative;
     bottom: 0;
     width: 100%;
+    font-size: 0.9rem;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    .resources {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .resource-item {
+        width: 90%;
+        max-width: 400px;
+    }
 }
