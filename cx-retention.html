@@ -6,50 +6,146 @@
     <title>Best CX & Retention Software Tools for Ecommerce</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #2b2b2b, #4e4e4e);
+            color: #f5f5f5;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            transition: all 0.3s ease-in-out;
         }
+
+        header {
+            background: linear-gradient(135deg, #ff5f6d, #ffc371);
+            color: #ffffff;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            position: relative;
+            overflow: hidden;
+            border-bottom: 2px solid #ff5f6d;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            animation: fadeIn 1s ease-out;
+        }
+
         .container {
             width: 80%;
             margin: auto;
-            overflow: hidden;
-        }
-        header {
-            background: #333;
-            color: #fff;
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: #bbb 1px solid;
-        }
-        header h1 {
-            text-align: center;
-            margin: 0;
-        }
-        .tools {
-            background: #fff;
             padding: 20px;
-            border-radius: 5px;
-            margin-bottom: 20px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(8px);
+            transition: all 0.3s ease;
         }
+
+        .tools {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
         .tool-item {
-            border-bottom: #eee 1px solid;
-            padding: 10px 0;
+            padding: 15px;
+            margin-bottom: 15px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
         }
-        .tool-item:last-child {
-            border-bottom: none;
+
+        .tool-item:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
         }
+
         .tool-item h3 {
-            margin: 0 0 5px;
+            margin: 0 0 10px;
+            font-size: 1.6rem;
+            color: #ff5f6d;
+            position: relative;
+            font-weight: bold;
         }
+
+        .tool-item h3::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background: #ff5f6d;
+            margin-top: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .tool-item:hover h3::after {
+            width: 100px;
+        }
+
+        .tool-item p {
+            margin: 0 0 10px;
+            color: #f5f5f5;
+            opacity: 0.9;
+            font-size: 1rem;
+        }
+
         .tool-item a {
-            color: #007bff;
+            color: #ff5f6d;
             text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
         }
+
         .tool-item a:hover {
+            color: #ff3f3f;
             text-decoration: underline;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .tool-item h3 {
+                font-size: 1.4rem;
+            }
+
+            .tool-item p {
+                font-size: 0.9rem;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            .tool-item h3 {
+                font-size: 1.2rem;
+            }
+
+            .tool-item p {
+                font-size: 0.8rem;
+            }
         }
     </style>
 </head>
@@ -124,107 +220,52 @@
             </div>
             <div class="tool-item">
                 <h3>FeedbackWhiz</h3>
-                <p>Amazon seller tools automate email campaigns, improve seller feedback, boost product reviews, monitor product listings and intelligently analyze profit and accounting data.</p>
+                <p>Amazon seller tools automate email campaigns, improve seller feedback, boost product reviews, monitor product listings and intelligently analyze your performance.</p>
                 <a href="https://feedbackwhiz.com" target="_blank">Check it out</a>
             </div>
             <div class="tool-item">
-                <h3>GiftReggie</h3>
-                <p>Gift Reggie is a white label gift registry & wish list solution for Shopify. It automatically takes on the look and feel of your store's design, giving your customers a completely seamless shopping experience.</p>
-                <a href="https://giftreggie.com" target="_blank">Check it out</a>
+                <h3>Fera</h3>
+                <p>Fera helps brands convert more traffic into paying customers with visual social proof, review widgets, and product recommendations.</p>
+                <a href="https://fera.ai" target="_blank">Check it out</a>
             </div>
             <div class="tool-item">
-                <h3>Instant Search +</h3>
-                <p>Site search with no coding, no integration, and no maintenance.</p>
-                <a href="https://instantsearchplus.com" target="_blank">Check it out</a>
+                <h3>Gorgias</h3>
+                <p>Gorgias centralizes customer support channels, allowing teams to respond faster and create a better customer experience.</p>
+                <a href="https://gorgias.com" target="_blank">Check it out</a>
             </div>
             <div class="tool-item">
-                <h3>Judge.me</h3>
-                <p>Judge.me powers the product reviews for your e-commerce store. Our apps help you collect and display star ratings and reviews on Shopify, WooCommerce, and more.</p>
-                <a href="https://judge.me" target="_blank">Check it out</a>
+                <h3>Octane AI</h3>
+                <p>Octane AI helps brands grow their Facebook Messenger subscriber base and increase revenue with automated conversations and personalized messages.</p>
+                <a href="https://octaneai.com" target="_blank">Check it out</a>
             </div>
             <div class="tool-item">
-                <h3>Junip</h3>
-                <p>Junip helps honest brands grow. 1000+ brands depend on Junip to gather & display real reviews from their customers.</p>
-                <a href="https://junip.co" target="_blank">Check it out</a>
+                <h3>Rebuy</h3>
+                <p>Rebuy's AI-powered personalization engine helps eCommerce stores increase revenue with tailored recommendations and dynamic offers.</p>
+                <a href="https://rebuyengine.com" target="_blank">Check it out</a>
             </div>
             <div class="tool-item">
-                <h3>LiveRecover</h3>
-                <p>Recover More Orders. With Pop-ups and Live Text, it's easy to grow a list of SMS subscribers that you can build trust and loyalty with over time.</p>
-                <a href="https://liverecover.com" target="_blank">Check it out</a>
+                <h3>Refersion</h3>
+                <p>Refersion helps eCommerce brands grow by building and managing influencer and affiliate programs. Track performance, pay affiliates, and optimize campaigns.</p>
+                <a href="https://refersion.com" target="_blank">Check it out</a>
             </div>
             <div class="tool-item">
-                <h3>Loox</h3>
-                <p>The best Shopify app for reviews. Collect photo reviews from your happy customers, strengthen your brand and boost Shopify store sales.</p>
-                <a href="https://loox.io" target="_blank">Check it out</a>
-            </div>
-            <div class="tool-item">
-                <h3>Low Stock Notifier</h3>
-                <p>Advance email / slack alerts for Low stock / inventory items</p>
-                <a href="https://lowstocknotifier.com" target="_blank">Check it out</a>
-            </div>
-            <div class="tool-item">
-                <h3>Malomo</h3>
-                <p>Malomo empowers ecommerce brands to generate revenue and customer loyalty by turning shipment tracking into a marketing channel.</p>
-                <a href="https://malomo.co" target="_blank">Check it out</a>
-            </div>
-            <div class="tool-item">
-                <h3>Narvar</h3>
-                <p>Narvar ensures every touchpoint along the consumer journey engages and enables emotional connections—from pre-purchase to post-purchase and beyond.</p>
-                <a href="https://narvar.com" target="_blank">Check it out</a>
-            </div>
-            <div class="tool-item">
-                <h3>Orderbump</h3>
-                <p>Increase your average order value by offering a one-click upsell to customers when they checkout.</p>
-                <a href="https://orderbump.io" target="_blank">Check it out</a>
-            </div>
-            <div class="tool-item">
-                <h3>ParcelPanel</h3>
-                <p>ParcelPanel helps you optimize your logistics and provides a comprehensive shipment tracking experience for your customers.</p>
-                <a href="https://parcelpanel.com" target="_blank">Check it out</a>
-            </div>
-            <div class="tool-item">
-                <h3>Recart</h3>
-                <p>Recart helps you recover abandoned carts and drive more sales through Facebook Messenger.</p>
-                <a href="https://recart.com" target="_blank">Check it out</a>
-            </div>
-            <div class="tool-item">
-                <h3>Rivo</h3>
-                <p>Rivo is a complete customer communication suite that helps eCommerce stores communicate with customers via SMS and email.</p>
-                <a href="https://rivo.io" target="_blank">Check it out</a>
-            </div>
-            <div class="tool-item">
-                <h3>Route</h3>
-                <p>Route provides visual tracking and post-purchase solutions to increase customer satisfaction and drive revenue.</p>
-                <a href="https://route.com" target="_blank">Check it out</a>
-            </div>
-            <div class="tool-item">
-                <h3>Shopify Ping</h3>
-                <p>Shopify Ping is a free business messaging app that helps you manage all your customer conversations from one place.</p>
-                <a href="https://shopify.com/ping" target="_blank">Check it out</a>
+                <h3>Retention Science</h3>
+                <p>Retention Science offers data-driven marketing solutions to help brands increase customer retention, drive repeat purchases, and maximize lifetime value.</p>
+                <a href="https://retentionscience.com" target="_blank">Check it out</a>
             </div>
             <div class="tool-item">
                 <h3>Smile.io</h3>
-                <p>Smile.io allows you to create customer rewards programs like points, referral programs, and VIP tiers to increase customer loyalty.</p>
+                <p>Smile.io allows you to create loyalty programs that reward your customers for engaging with your brand. Boost retention with points, referrals, and VIP tiers.</p>
                 <a href="https://smile.io" target="_blank">Check it out</a>
             </div>
             <div class="tool-item">
-                <h3>Stitch Labs</h3>
-                <p>Stitch Labs provides a comprehensive inventory and order management solution that helps ecommerce businesses scale efficiently.</p>
-                <a href="https://stitchlabs.com" target="_blank">Check it out</a>
-            </div>
-            <div class="tool-item">
-                <h3>Trusted Shops</h3>
-                <p>Trusted Shops offers a wide range of tools for customer reviews, ratings, and trust marks to enhance your ecommerce business's credibility.</p>
-                <a href="https://trustedshops.com" target="_blank">Check it out</a>
-            </div>
-            <div class="tool-item">
-                <h3>Trustpilot</h3>
-                <p>Trustpilot helps businesses collect and manage customer reviews to improve their online reputation and increase trust with potential customers.</p>
-                <a href="https://trustpilot.com" target="_blank">Check it out</a>
+                <h3>Stamped.io</h3>
+                <p>Stamped.io helps businesses gather and leverage customer reviews, ratings, and social proof to drive conversions and increase trust.</p>
+                <a href="https://stamped.io" target="_blank">Check it out</a>
             </div>
             <div class="tool-item">
                 <h3>Yotpo</h3>
-                <p>Yotpo is a customer content marketing platform that helps brands collect and leverage reviews, photos, and UGC to drive sales and customer engagement.</p>
+                <p>Yotpo offers comprehensive solutions for collecting and displaying user-generated content, including reviews, ratings, and visual assets.</p>
                 <a href="https://yotpo.com" target="_blank">Check it out</a>
             </div>
         </div>
