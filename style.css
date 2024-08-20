@@ -315,26 +315,7 @@ p {
     transform: translateZ(25px); /* Enhanced 3D effect on hover */
 }
 
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: #fff;
-    transform: translateZ(10px); /* 3D effect */
-}
 
-.footer-link {
-    color: #f0a500;
-    text-decoration: none;
-    display: inline-block;
-    padding: 5px 10px;
-    transition: transform 0.3s ease, color 0.3s ease;
-    transform: translateZ(10px); /* 3D effect */
-}
-
-.footer-link:hover {
-    transform: translateZ(20px) rotateY(10deg); /* 3D rotate effect on hover */
-    color: #fff;
 }
 
 /* Responsive Styles for Mobile */
@@ -368,11 +349,5 @@ footer {
         transform: translateZ(15px); /* Less aggressive hover effect on mobile */
     }
 
-    .footer-link {
-        transform: translateZ(5px); /* Reduce 3D effect on smaller screens */
-    }
-
-    .footer-link:hover {
-        transform: translateZ(10px) rotateY(5deg); /* Less aggressive hover effect on mobile */
-    }
+   
 }
